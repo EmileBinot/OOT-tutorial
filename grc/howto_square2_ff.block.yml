@@ -1,0 +1,17 @@
+id: howto_square2_ff
+label: square2 ff
+category: '[Howto]'
+templates:
+  imports: import howto
+  make: howto.square2_ff()
+inputs:
+- label: in
+  domain: stream
+  dtype: float
+  multiplicity: 1 
+outputs:
+- label: out
+  domain: stream
+  dtype: float
+  multiplicity: 1 
+file_format: 1
