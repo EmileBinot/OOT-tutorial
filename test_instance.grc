@@ -62,8 +62,8 @@ blocks:
     coordinate: [648, 212.0]
     rotation: 0
     state: true
-- name: howto_square_ff_0
-  id: howto_square_ff
+- name: howto_square3_ff_0
+  id: howto_square3_ff
   parameters:
     affinity: ''
     alias: ''
@@ -74,7 +74,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [920, 216.0]
+    coordinate: [904, 248.0]
     rotation: 0
     state: true
 - name: qtgui_number_sink_0
@@ -142,8 +142,8 @@ blocks:
     state: true
 
 connections:
-- [analog_const_source_x_0, '0', howto_square_ff_0, '0']
-- [howto_square_ff_0, '0', qtgui_number_sink_0, '0']
+- [analog_const_source_x_0, '0', howto_square3_ff_0, '0']
+- [howto_square3_ff_0, '0', qtgui_number_sink_0, '0']
 
 metadata:
   file_format: 1

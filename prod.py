@@ -112,15 +112,15 @@ class prod(gr.top_block, Qt.QWidget):
         self.qtgui_number_sink_0.enable_autoscale(False)
         self._qtgui_number_sink_0_win = sip.wrapinstance(self.qtgui_number_sink_0.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_number_sink_0_win)
-        self.howto_square_ff_0 = howto.square_ff()
+        self.howto_square3_ff_0 = howto.square3_ff()
         self.analog_const_source_x_0 = analog.sig_source_f(0, analog.GR_CONST_WAVE, 0, 0, 3)
 
 
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.analog_const_source_x_0, 0), (self.howto_square_ff_0, 0))
-        self.connect((self.howto_square_ff_0, 0), (self.qtgui_number_sink_0, 0))
+        self.connect((self.analog_const_source_x_0, 0), (self.howto_square3_ff_0, 0))
+        self.connect((self.howto_square3_ff_0, 0), (self.qtgui_number_sink_0, 0))
 
 
     def closeEvent(self, event):
